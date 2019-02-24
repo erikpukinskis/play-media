@@ -1,6 +1,6 @@
 {
   "name": "play-media",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get permission to play sounds automatically and then embed sounds into the page on various delays",
   "main": "play-media.js",
   "dependencies": {
