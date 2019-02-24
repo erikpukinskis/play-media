@@ -45,7 +45,7 @@ module.exports = library.export(
           "button.who-is-she",
           "What kind of name is Starmanx?"),
         playerControls(
-          "On my home planet it's an unusual but quite normal name",
+          "On my home planet its an uncommon but quite normal name",
           "starmanx")
       ),
       p(element(
