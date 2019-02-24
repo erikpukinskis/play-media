@@ -145,7 +145,8 @@ module.exports = library.export(
       video = document.getElementById(id)
 
       if (!video) {
-        throw new Error("No video with id "+id)
+        console.log("Could not find video with id "+id)
+        return
       }
       video.onended = function() {
         video.parentNode.classList.remove("playing")}
