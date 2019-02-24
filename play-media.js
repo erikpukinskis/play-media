@@ -156,9 +156,11 @@ module.exports = library.export(
       }
 
       video.onended = function() {
+        video = document.getElementById(id)
         video.parentNode.classList.remove("playing")}
 
       video.onplay = function() {
+        video = document.getElementById(id)
         video.parentNode.classList.add("playing")}
 
       var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2
