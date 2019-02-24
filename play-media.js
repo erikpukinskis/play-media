@@ -27,9 +27,12 @@ module.exports = library.export(
     }
 
     function playerControls(script, id) {
-      return element(
+      var audio = player(script, id)
+      var controls = element(
         ".player-controls",
-        player(script, id))}
+        audio)
+      controls.playerId = audio.assignId()
+      return controls }
 
     var starmanxPlea = [
       p("Starmanx would like to speak to you, will you enable her voice?"),
