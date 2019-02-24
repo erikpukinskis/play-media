@@ -147,7 +147,11 @@ module.exports = library.export(
       if (!video) {
         console.log("Could not find video with id "+id)
         return
+
+      } else if (video.tagName != "AUDIO") {
+        throw new Error("Seems weird. We're supposed to play an audio element.")
       }
+
       video.onended = function() {
         video.parentNode.classList.remove("playing")}
 
